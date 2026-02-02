@@ -1,0 +1,66 @@
+# 🏘️ Rental Management System – Programming II Assignment 1
+
+This project simulates a **rental management system** for a property company. The system tracks properties, leases, residents, contracts, payments, maintenance, and more. It follows object-oriented design principles and simulates real-world rental workflows.
+
+---
+
+## 📁 File Overview
+
+### `rentalcompany.py`
+Defines the core `RentalCompany` class, which manages a list of all rental properties and provides basic analytics.
+
+### `property.py`
+Includes all property types: `House`, `Apartment`, `Shop`, and `Land`. Each inherits from a base `Property` class with attributes like address, price, size, and occupancy status.
+
+### `contract.py`
+Implements the `Contract` class between an owner and the rental company. It includes commission calculations and active period checks.
+
+### `lease_agreement.py`
+Manages rental agreements between residents and properties. Tracks lease dates, rent, and associated property/resident.
+
+### `resident.py`
+Extends the `User` class. Residents can pay rent, view leases, and apply for properties.
+
+### `user.py`
+Contains different user roles: `User`, `Admin`, `Renter`. Admins can manage properties.
+
+### `owner.py`
+Represents property owners. Tracks properties owned and provides access to them.
+
+### `payment.py`
+Handles payment tracking. Includes `Payment` and `LatePayment`, which adds penalties for overdue payments.
+
+### `notifications.py`
+Implements a `Notification` system to send messages to users (e.g., overdue payments).
+
+### `maintenance.py`
+Implements `MaintenanceRequest` for property repairs, with approval/rejection and event logging.
+
+### `analytics.py`
+Provides `RentalAnalytics` and `MonthlyReport` to calculate vacancy rates, income, and generate monthly reports.
+
+### `event.py`
+Handles `Event` and `EventLog` classes to log actions like rent payments and maintenance.
+
+### `review.py`
+Implements review and complaint systems for properties, with support for ratings and feedback.
+
+### `property_search.py`
+Allows searching properties by location, price, and availability. Includes a `Navigation` class to find nearest properties using geolocation.
+
+### `test_example.py`
+Contains unit tests using `pytest` to verify core system functionalities like leases, payments, and property management.
+
+---
+
+## 🚀 Features
+
+- Add and manage different types of properties
+- Handle contracts and leases with residents
+- Simulate payments, including late payment penalties
+- Log events and send notifications
+- Process maintenance requests
+- Generate rental analytics and monthly reports
+- Support for reviews, complaints, and property searching
+
+---
