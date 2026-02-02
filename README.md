@@ -1,0 +1,1 @@
+Rental Management System: an OOP-based simulation for a property company that manages properties, owners, residents, contracts/leases, payments (incl. late penalties), maintenance requests, notifications, event logs, reviews/complaints, property search, and analytics with monthly reports.
